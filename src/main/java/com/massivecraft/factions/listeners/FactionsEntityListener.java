@@ -435,8 +435,10 @@ public class FactionsEntityListener extends AbstractListener {
             return true;
         }
 
-        // You can never hurt faction members or allies
+        // You can never hurt faction members or allies - TODO bypass with permissions
         if (relation.isMember() || relation.isAlly() || relation.isTruce()) {
+            if (attackFaction.hasAccess(attacker, PermissibleAction.PVP)) return true;
+
             if (notify) {
                 attacker.msg(TL.PLAYER_PVP_CANTHURT, defender.describeTo(attacker));
             }
