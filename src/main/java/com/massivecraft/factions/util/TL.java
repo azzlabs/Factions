@@ -897,6 +897,7 @@ public enum TL {
     PERM_TNTWITHDRAW("Withdraw TNT from faction bank"),
     PERM_WARP("Using faction warps"),
     PERM_FLY("Flying in faction territory"),
+    PERM_PVP("PvP in faction territory"),
     PERM_OWNER("Set ownership of land using /f owner in faction territory"),
 
     PERM_SHORT_BUILD("build"),
@@ -924,6 +925,7 @@ public enum TL {
     PERM_SHORT_TNTWITHDRAW("withdraw TNT"),
     PERM_SHORT_WARP("use warps"),
     PERM_SHORT_FLY("fly"),
+    PERM_SHORT_PVP("PVP"),
     PERM_SHORT_OWNER("set ownership"),
 
     PERM_DENIED_WILDERNESS("&cYou can't %s in the wilderness"),

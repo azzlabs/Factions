@@ -173,6 +173,10 @@ public class DefaultPermissionsConfig {
             return this.fly;
         }
 
+        public FullPermInfo getPvP() {
+            return this.pvp;
+        }
+
         @Comment("Can ban others from the faction")
         private FactionOnlyPermInfo ban = new FactionOnlyPermInfo() {
             {
@@ -364,6 +368,17 @@ public class DefaultPermissionsConfig {
                 this.moderator.value = true;
                 this.normal.value = true;
                 this.recruit.value = true;
+                this.ally.value = true;
+            }
+        };
+
+        @Comment("Can pvp in faction territory")
+        private FullPermInfo pvp = new FullPermInfo() {
+            {
+                this.coleader.value = true;
+                this.moderator.value = true;
+                this.normal.value = true;
+                this.recruit.value = false;
                 this.ally.value = true;
             }
         };

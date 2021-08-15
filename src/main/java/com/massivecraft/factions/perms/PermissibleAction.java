@@ -36,6 +36,7 @@ public enum PermissibleAction {
     TNTWITHDRAW(true, DefaultPermissionsConfig.Permissions::getTNTWithdraw, TL.PERM_TNTWITHDRAW, TL.PERM_SHORT_TNTWITHDRAW, "TNT"),
     WARP(DefaultPermissionsConfig.Permissions::getWarp, TL.PERM_WARP, TL.PERM_SHORT_WARP, "ENDER_PEARL"),
     FLY(DefaultPermissionsConfig.Permissions::getFly, TL.PERM_FLY, TL.PERM_SHORT_FLY, "FEATHER"),
+    PVP(DefaultPermissionsConfig.Permissions::getPvP, TL.PERM_PVP, TL.PERM_SHORT_PVP, "DIAMOND_SWORD"),
     ;
 
     private final boolean factionOnly;

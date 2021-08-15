@@ -36,7 +36,7 @@ public class PermissibleActionGUI extends GUI<PermissibleAction> implements GUI.
     private final boolean online;
 
     public PermissibleActionGUI(boolean online, FPlayer user, Permissible permissible) {
-        super(user, (int) Math.ceil(((double) PermissibleAction.values().length) / 9d) + 1);
+        super(user, (int) Math.ceil(((double) PermissibleAction.values().length) / 9d) + 2); // + 1
         this.permissible = permissible;
         this.online = online;
         build();
